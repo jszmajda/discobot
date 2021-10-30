@@ -17,6 +17,17 @@ client.on('message', async message => {
     // https://discord.js.org/#/docs/main/stable/class/Message?scrollTo=reply
     message.reply('Heya')
     message.react('👍🏻')
+  } else if (message.content.match('how you doin')) {
+    message.channel.send("eh, I'm doing ok, thank")
+  } else if (message.content.match('have a good evening')) {
+    message.channel.send("ok, cool")
+    setTimeout(() => {
+      message.channel.send('seeya')
+      setTimeout(() => {
+        message.channel.send('I guess')
+      }, 10000)
+    }, 5000)
+
   }
 })
 
