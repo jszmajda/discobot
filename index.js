@@ -24,10 +24,9 @@ client.on('message', async message => {
     setTimeout(() => {
       message.channel.send('seeya')
       setTimeout(() => {
-        message.channel.send('I guess')
+        message.channel.send('I guess...')
       }, 10000)
     }, 5000)
-
   }
 })
 
